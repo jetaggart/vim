@@ -12,6 +12,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'croaky/vim-colors-github'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/ctags.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,6 +68,9 @@ set colorcolumn=+1
 " " Numbers
 set number
 set numberwidth=5
+
+" Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
+let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 
 " Index ctags from any project, including those outside Rails
 map <Leader>ct :!ctags -R .<CR>
