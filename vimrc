@@ -17,6 +17,8 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-markdown'
 
+Plugin 'tpope/vim-bundler'
+
 Plugin 'vim-scripts/SyntaxRange'
 
 Plugin 'croaky/vim-colors-github'
