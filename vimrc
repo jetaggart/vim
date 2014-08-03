@@ -11,11 +11,17 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'vim-scripts/SyntaxRange'
 Plugin 'croaky/vim-colors-github'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ctags.vim'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'gregsexton/gitv'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
