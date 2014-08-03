@@ -12,16 +12,32 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
+
 Plugin 'tpope/vim-surround'
+
 Plugin 'tpope/vim-markdown'
+
 Plugin 'vim-scripts/SyntaxRange'
+
 Plugin 'croaky/vim-colors-github'
+
 Plugin 'kien/ctrlp.vim'
+
 Plugin 'vim-ruby/vim-ruby'
+
 Plugin 'vim-scripts/ctags.vim'
+
 Plugin 'rking/ag.vim'
+
 Plugin 'gregsexton/gitv'
-Plugin 'scrooloose/nerdtree'
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "util_snippets"]
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
