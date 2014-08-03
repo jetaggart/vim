@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+runtime macros/matchit.vim
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -11,15 +12,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-markdown'
 Plugin 'vim-scripts/SyntaxRange'
 Plugin 'croaky/vim-colors-github'
 Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'rking/ag.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'gregsexton/gitv'
 Plugin 'scrooloose/nerdtree'
 
