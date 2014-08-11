@@ -13,6 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'mtth/scratch.vim'
 
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'tpope/vim-surround'
