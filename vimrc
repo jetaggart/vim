@@ -11,6 +11,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'mtth/scratch.vim'
+
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'tpope/vim-surround'
