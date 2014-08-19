@@ -45,6 +45,9 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
+Plugin 'vim-scripts/vim-auto-save'
+let g:auto_save = 1
+
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "util_snippets"]
