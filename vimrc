@@ -23,6 +23,8 @@ Plugin 'tpope/vim-markdown'
 
 Plugin 'tpope/vim-bundler'
 
+Plugin 'tpope/vim-endwise'
+
 Plugin 'vim-scripts/SyntaxRange'
 
 Plugin 'croaky/vim-colors-github'
