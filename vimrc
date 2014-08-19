@@ -45,6 +45,10 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_key_list_previous_completion=['<Up>']
+let g:ycm_key_list_select_completion=['<Down>']
+
 Plugin 'vim-scripts/vim-auto-save'
 let g:auto_save = 1
 
@@ -93,7 +97,6 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-
 colorscheme github
 highlight NonText guibg=#060606
 highlight Folded guibg=#0A0A0A guifg=#9090D0
@@ -124,4 +127,3 @@ nnoremap <C-l> <C-w>l
 
 " open new line in insert mode
 imap <C-o> <esc>o
-
