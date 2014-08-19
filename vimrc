@@ -37,6 +37,8 @@ Plugin 'rking/ag.vim'
 
 Plugin 'gregsexton/gitv'
 
+Plugin 'pangloss/vim-javascript'
+
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "util_snippets"]
@@ -69,9 +71,6 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-
-" Display extra whitespace
-set list listchars=tab:»·,trail:·
 
 if executable('ag')
   " Use Ag over Grep
