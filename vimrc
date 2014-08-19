@@ -33,6 +33,10 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'vim-ruby/vim-ruby'
 
+Plugin 'lukerandall/haskellmode-vim'
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
+
 Plugin 'vim-scripts/ctags.vim'
 
 Plugin 'rking/ag.vim'
