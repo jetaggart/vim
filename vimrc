@@ -39,6 +39,10 @@ Plugin 'gregsexton/gitv'
 
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'mattn/emmet-vim'
+
+Plugin 'Raimondi/delimitMate'
+
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "util_snippets"]
