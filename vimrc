@@ -41,7 +41,7 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'mattn/emmet-vim'
 
-Plugin 'Raimondi/delimitMate'
+Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
