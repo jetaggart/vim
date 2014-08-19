@@ -117,3 +117,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" open new line in insert mode
+imap <C-o> <esc>o
+
