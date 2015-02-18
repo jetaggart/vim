@@ -38,6 +38,8 @@ Plugin 'tpope/vim-bundler'
 
 Plugin 'tpope/vim-endwise'
 
+Plugin 'tpope/vim-unimpaired'
+
 Plugin 'vim-scripts/SyntaxRange'
 
 Plugin 'kien/ctrlp.vim'
@@ -140,7 +142,7 @@ imap <C-o> <esc>o
 let mapleader = ","
 
 " copy current file
-noremap <silent> <F3> :let @+=expand("%:p")<CR>
-noremap <silent> <F4> :let @+=expand("%:p").":".line(".")<CR>
+noremap <silent> tf :let @+="te ".expand("%:p")<CR>
+noremap <silent> tl :let @+="te ".expand("%:p").":".line(".")<CR>
 
 colorscheme tomorrow
