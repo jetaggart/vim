@@ -13,6 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'xolox/vim-misc'
+
 Plugin 'xolox/vim-easytags'
 let g:easytags_opts = ['-–fileds=+l']
 let g:easytags_async = 1
