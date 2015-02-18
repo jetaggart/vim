@@ -56,6 +56,8 @@ Plugin 'gregsexton/gitv'
 
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'kchmck/vim-coffee-script'
+
 Plugin 'mattn/emmet-vim'
 
 Plugin 'jiangmiao/auto-pairs'
