@@ -13,11 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+let g:ycm_register_as_syntastic_checker = 0
 
 Plugin 'xolox/vim-misc'
 
 Plugin 'xolox/vim-easytags'
-let g:easytags_opts = ['-–fileds=+l']
+let g:easytags_opts = ['-fileds=+l']
 let g:easytags_async = 1
 set tags=./tags;
 let g:easytags_dynamic_files = 1
@@ -41,12 +44,6 @@ Plugin 'vim-scripts/SyntaxRange'
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'vim-ruby/vim-ruby'
-
-Plugin 'thoughtbot/vim-rspec'
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
 Plugin 'lukerandall/haskellmode-vim'
 let g:haddock_browser = "open"
