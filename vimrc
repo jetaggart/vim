@@ -33,11 +33,15 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'vim-ruby/vim-ruby'
 
+Plugin 'thoughtbot/vim-rspec'
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
 Plugin 'lukerandall/haskellmode-vim'
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
-
-Plugin 'vim-scripts/ctags.vim'
 
 Plugin 'rking/ag.vim'
 
@@ -48,13 +52,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mattn/emmet-vim'
 
 Plugin 'jiangmiao/auto-pairs'
-
-Plugin 'eagletmt/neco-ghc'
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
-
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_key_list_previous_completion=['<Up>']
-let g:ycm_key_list_select_completion=['<Down>']
 
 Plugin 'vim-scripts/vim-auto-save'
 let g:auto_save = 1
@@ -70,7 +67,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-let mapleader = ","
 
 set backspace=2 " Backspace deletes like most programs in insert mode
 set nobackup
@@ -134,3 +130,8 @@ nnoremap <C-l> <C-w>l
 
 " open new line in insert mode
 imap <C-o> <esc>o
+
+" disable ex mode
+:map Q <Nop>
+
+let mapleader = ","
