@@ -1,6 +1,5 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 runtime macros/matchit.vim
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -66,8 +65,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "util_snippets"]
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 
 
 call vundle#end()            " required
@@ -139,5 +138,9 @@ imap <C-o> <esc>o
 :map Q <Nop>
 
 let mapleader = ","
+
+" copy current file
+noremap <silent> <F3> :let @+=expand("%:p")<CR>
+noremap <silent> <F4> :let @+=expand("%:p").":".line(".")<CR>
 
 colorscheme tomorrow
