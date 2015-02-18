@@ -27,8 +27,6 @@ Plugin 'tpope/vim-endwise'
 
 Plugin 'vim-scripts/SyntaxRange'
 
-Plugin 'croaky/vim-colors-github'
-
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'vim-ruby/vim-ruby'
@@ -100,13 +98,11 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-colorscheme github
 highlight NonText guibg=#060606
 highlight Folded guibg=#0A0A0A guifg=#9090D0
 
 " Make it obvious where 80 characters is
 set textwidth=80
-set colorcolumn=+1
 "
 " " Numbers
 set number
