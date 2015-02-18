@@ -131,3 +131,5 @@ imap <C-o> <esc>o
 :map Q <Nop>
 
 let mapleader = ","
+
+colorscheme tomorrow
