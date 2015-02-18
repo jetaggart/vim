@@ -10,8 +10,8 @@ let s:selection = "d6d6d6"
 let s:line = "efefef"
 let s:comment = "8e908c"
 let s:red = "c82829"
-let s:orange = "f5871f"
-let s:yellow = "eab700"
+let s:orange = "cd853f"
+let s:yellow = "8b7500"
 let s:green = "718c00"
 let s:aqua = "3e999f"
 let s:blue = "4271ae"
@@ -267,7 +267,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:comment, s:background, "")
 	call <SID>X("Title", s:comment, "", "")
-	call <SID>X("Identifier", s:red, "", "none")
+	call <SID>X("Identifier", s:aqua, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
@@ -303,7 +303,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Ruby Highlighting
 	call <SID>X("rubySymbol", s:green, "", "")
-	call <SID>X("rubyConstant", s:yellow, "", "")
+	call <SID>X("rubyConstant", s:aqua, "", "")
 	call <SID>X("rubyAccess", s:yellow, "", "")
 	call <SID>X("rubyAttribute", s:blue, "", "")
 	call <SID>X("rubyInclude", s:blue, "", "")
