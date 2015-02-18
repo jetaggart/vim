@@ -11,6 +11,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'xolox/vim-easytags'
+let g:easytags_opts = ['-–fileds=+l']
+let g:easytags_async = 1
+set tags=./tags;
+let g:easytags_dynamic_files = 1
+
 Plugin 'mtth/scratch.vim'
 
 Plugin 'scrooloose/nerdtree'
