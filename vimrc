@@ -153,6 +153,7 @@ noremap <silent> tl :let @+="te ".expand("%:p").":".line(".")<CR>
 map <leader>f :Ag<Space>
 map <leader>F :Ag <C-R><C-W><CR>
 
+map <leader>i :set foldmethod=indent<cr>zM<cr>
 " NERDTree
 map \           :NERDTreeToggle<CR>
 map \|          :NERDTreeFind<CR>
