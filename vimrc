@@ -145,4 +145,11 @@ let mapleader = ","
 noremap <silent> tf :let @+="te ".expand("%:p")<CR>
 noremap <silent> tl :let @+="te ".expand("%:p").":".line(".")<CR>
 
+" Ag <leader>f to search
+map <leader>f :Ag<Space>
+map <leader>F :Ag <C-R><C-W><CR>
+
+nnoremap Y y$
+
 colorscheme tomorrow
+
