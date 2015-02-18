@@ -137,6 +137,8 @@ nnoremap <C-l> <C-w>l
 
 " open new line in insert mode
 imap <C-o> <esc>o
+" go to end of line
+imap <C-e> <esc>A
 
 " disable ex mode
 :map Q <Nop>
@@ -150,6 +152,10 @@ noremap <silent> tl :let @+="te ".expand("%:p").":".line(".")<CR>
 " Ag <leader>f to search
 map <leader>f :Ag<Space>
 map <leader>F :Ag <C-R><C-W><CR>
+
+" NERDTree
+map \           :NERDTreeToggle<CR>
+map \|          :NERDTreeFind<CR>
 
 nnoremap Y y$
 
