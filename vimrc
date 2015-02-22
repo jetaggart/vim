@@ -30,6 +30,8 @@ Plugin 'mtth/scratch.vim'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'airblade/vim-gitgutter'
+
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'tpope/vim-surround'
