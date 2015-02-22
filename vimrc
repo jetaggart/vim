@@ -158,5 +158,10 @@ map \|          :NERDTreeFind<CR>
 
 nnoremap Y y$
 
+" shift-tab for command mode
+nmap <S-Tab> <<
+" shift-tab for insert mode
+imap <S-Tab> <Esc><<i
+
 colorscheme tomorrow
 
