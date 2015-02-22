@@ -145,9 +145,26 @@ imap <C-e> <esc>A
 
 let mapleader = ","
 
+function! RunSilent(cmd)
+  execute "silent !" . a:cmd
+  execute "redraw!"
+endfunction
+
+command! RunTestFile :call RunTestFile()
+function! RunTestFile()
+  let testCmd = "te run " . expand("%:p") . " &"
+  call RunSilent(testCmd)
+endfunction
+
+command! RunTestLine :call RunTestLine()
+function! RunTestLine()
+  let testCmd = "te run " . expand("%:p") . ":" . line(".") . " &"
+  call RunSilent(testCmd)
+endfunction
+
 " copy current file
-noremap <silent> tf :let @+="te ".expand("%:p")<CR>
-noremap <silent> tl :let @+="te ".expand("%:p").":".line(".")<CR>
+noremap <silent> tf :RunTestFile<CR>
+noremap <silent> tl :RunTestLine<CR>
 
 " Ag <leader>f to search
 map <leader>f :Ag<Space>
