@@ -24,6 +24,8 @@ let g:easytags_async = 1
 set tags=./tags;
 let g:easytags_dynamic_files = 1
 
+Plugin 'jetaggart/vim-te'
+
 Plugin 'mtth/scratch.vim'
 
 Plugin 'scrooloose/nerdtree'
@@ -144,27 +146,6 @@ imap <C-e> <esc>A
 :map Q <Nop>
 
 let mapleader = ","
-
-function! RunSilent(cmd)
-  execute "silent !" . a:cmd
-  execute "redraw!"
-endfunction
-
-command! RunTestFile :call RunTestFile()
-function! RunTestFile()
-  let testCmd = "te run " . expand("%:p") . " &"
-  call RunSilent(testCmd)
-endfunction
-
-command! RunTestLine :call RunTestLine()
-function! RunTestLine()
-  let testCmd = "te run " . expand("%:p") . ":" . line(".") . " &"
-  call RunSilent(testCmd)
-endfunction
-
-" copy current file
-noremap <silent> tf :RunTestFile<CR>
-noremap <silent> tl :RunTestLine<CR>
 
 " Ag <leader>f to search
 map <leader>f :Ag<Space>
