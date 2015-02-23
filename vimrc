@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 runtime macros/matchit.vim
+
+let mapleader = ","
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -26,13 +29,22 @@ let g:easytags_dynamic_files = 1
 
 Plugin 'jetaggart/vim-te'
 
+let g:scratch_no_mappings=1
 Plugin 'mtth/scratch.vim'
+nmap ss <plug>(scratch-insert-reuse)
+nmap sS <plug>(scratch-insert-clear)
+xmap ss <plug>(scratch-selection-reuse)
+xmap sS <plug>(scratch-selection-clear)
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'airblade/vim-gitgutter'
+Plugin 'gregsexton/gitv'
+nmap <leader>gl :Gitv<CR>
 
 Plugin 'tpope/vim-fugitive'
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gd :Gdiff<CR>
+nmap <leader>gb :Gblame<CR>
 
 Plugin 'tpope/vim-surround'
 
@@ -53,8 +65,6 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'dag/vim2hs'
 
 Plugin 'rking/ag.vim'
-
-Plugin 'gregsexton/gitv'
 
 Plugin 'pangloss/vim-javascript'
 
@@ -143,9 +153,10 @@ imap <C-o> <esc>o
 imap <C-e> <esc>A
 
 " disable ex mode
-:map Q <Nop>
+map Q <Nop>
 
-let mapleader = ","
+" quick write quit
+map <leader>wq :x<CR>
 
 " Ag <leader>f to search
 map <leader>f :Ag<Space>
