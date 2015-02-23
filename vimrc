@@ -45,6 +45,8 @@ Plugin 'tpope/vim-fugitive'
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gb :Gblame<CR>
+nmap <leader>gp :Gpush<CR>
+nmap <leader>gpr :Gpull --rebase<CR>
 
 Plugin 'tpope/vim-surround'
 
