@@ -164,7 +164,7 @@ nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
 
 " more like the real world
-:imap <A-BS> <C-W>
+imap <A-BS> <C-W>
 
 colorscheme tomorrow
 
