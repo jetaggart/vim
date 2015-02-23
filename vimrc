@@ -145,6 +145,10 @@ map <Leader>ct :!ctags -R .<CR>
 set splitbelow
 set splitright
 
+set hlsearch
+
+nmap <Space> :noh<CR>
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
