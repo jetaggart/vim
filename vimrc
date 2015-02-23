@@ -163,5 +163,8 @@ nmap <S-Tab> <<
 " shift-tab for insert mode
 imap <S-Tab> <Esc><<i
 
+" more like the real world
+:imap <A-BS> <C-W>
+
 colorscheme tomorrow
 
