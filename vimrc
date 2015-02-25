@@ -158,8 +158,7 @@ endfun
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-nmap <Space> :noh<CR>
-
+nnoremap <silent><expr> <Space> (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
