@@ -80,6 +80,8 @@ Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'vim-scripts/vim-auto-save'
 let g:auto_save = 1
+let g:auto_save_in_insert_mode = 0
+let g:auto_save_silent = 1
 
 Plugin 'SirVer/ultisnips'
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "util_snippets"]
