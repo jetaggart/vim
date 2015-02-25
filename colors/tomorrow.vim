@@ -16,6 +16,7 @@ let s:green = "718c00"
 let s:aqua = "3e999f"
 let s:blue = "4271ae"
 let s:purple = "8959a8"
+let s:light_purple = "d8e2f0"
 let s:window = "efefef"
 
 set background=light
@@ -237,7 +238,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
-	call <SID>X("Search", s:foreground, s:yellow, "")
+	call <SID>X("Search", s:foreground, s:light_purple, "")
 	call <SID>X("TabLine", s:window, s:foreground, "reverse")
 	call <SID>X("TabLineFill", s:window, s:foreground, "reverse")
 	call <SID>X("StatusLine", s:window, s:yellow, "reverse")
