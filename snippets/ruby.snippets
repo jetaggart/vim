@@ -1,73 +1,59 @@
 snippet cla
-class $1
-	$2
-end
-endsnippet
+	class ${1}
+		${2}
+	end
 
 snippet def
-def $1
-	$2
-end
-endsnippet
+	def ${1}
+		${2}
+	end
 
 snippet sce
-scenario "$1" do
-	$2
-end
-endsnippet
+	scenario "${1}" do
+		${2}
+	end
 
 snippet fe
-feature "$1" do
-	$2
-end
-endsnippet
+	feature "${1}" do
+		${2}
+	end
 
 snippet sp
-save_and_open_page
-endsnippet
+	save_and_open_page
 
 snippet co
-context "$1" do
-	$2
-end
-endsnippet
+	context "${1}" do
+		${2}
+	end
 
 snippet de
-describe $1 do
-	$2
-end
-endsnippet
+	describe ${1} do
+		${2}
+	end
 
 snippet it
-it "$1" do
-	$2
-end
-endsnippet
+	it "${1}" do
+		${2}
+	end
 
 snippet exhc
-expect(page).to have_content("$1")
-endsnippet
+	expect(page).to have_content("${1}")
 
 snippet ex
-expect($1).to $2
-endsnippet
+	expect(${1}).to ${2}
 
 snippet exn
-expect($1).to_not $2
-endsnippet
+	expect(${1}).to_not ${2}
 
 snippet pl
-puts "#"*80
-puts "#{__FILE__}:#{__LINE__}"
-puts $1
-puts "#"*80
-$2
-endsnippet
+	puts "#"*80
+	puts "#{__FILE__}:#{__LINE__}"
+	puts ${1}
+	puts "#"*80
+	${2}
 
 snippet let
-let(:$1) { $2 }
-endsnippet
+	let(:${1}) { ${2} }
 
 snippet let!
-let!(:$1) { $2 }
-endsnippet
+	let!(:${1}) { ${2} }
