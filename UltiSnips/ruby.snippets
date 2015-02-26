@@ -34,10 +34,22 @@ snippet ex
 expect($1).to $2
 endsnippet
 
+snippet exn
+expect($1).to_not $2
+endsnippet
+
 snippet pl
 puts "#"*80
 puts "#{__FILE__}:#{__LINE__}"
 puts $1
 puts "#"*80
 $2
+endsnippet
+
+snippet let
+let(:$1) { $2 }
+endsnippet
+
+snippet let!
+let!(:$1) { $2 }
 endsnippet
