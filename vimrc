@@ -111,6 +111,7 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+let g:ctrlp_extensions = ['tag', 'buffertag']
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
