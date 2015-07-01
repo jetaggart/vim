@@ -13,11 +13,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
-let g:ycm_register_as_syntastic_checker = 0
+Plugin 'junegunn/vim-easy-align'
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 Plugin 'xolox/vim-misc'
 
@@ -41,6 +41,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'gregsexton/gitv'
 nmap <leader>gl :Gitv<CR>
 
+Plugin 'airblade/vim-gitgutter'
+
 Plugin 'tpope/vim-fugitive'
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gd :Gdiff<CR>
@@ -63,6 +65,8 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-scripts/SyntaxRange'
 
 Plugin 'kien/ctrlp.vim'
+let g:ctrlp_max_files = 0
+let g:ctrlp_match_window = 'results:100'
 
 Plugin 'vim-ruby/vim-ruby'
 
@@ -74,7 +78,11 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'kchmck/vim-coffee-script'
 
+Plugin 'terryma/vim-multiple-cursors'
+
 Plugin 'mattn/emmet-vim'
+
+Plugin 'AndrewRadev/switch.vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
@@ -196,3 +204,9 @@ imap <A-BS> <C-W>
 
 colorscheme tomorrow
 
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+autocmd Filetype haskell setlocal ts=4 sts=4 sw=4
+
+if has('gui_running')
+  set guifont=Inconsolata:h14
+endif
