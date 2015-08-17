@@ -19,6 +19,8 @@ vmap <Enter> <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+Plugin 'karlbright/qfdo.vim'
+
 Plugin 'xolox/vim-misc'
 
 Plugin 'xolox/vim-easytags'
@@ -62,10 +64,8 @@ Plugin 'tpope/vim-endwise'
 
 Plugin 'tpope/vim-unimpaired'
 
-Plugin 'vim-scripts/SyntaxRange'
-
 Plugin 'kien/ctrlp.vim'
-let g:ctrlp_max_files = 0
+let g:ctrlp_max_files = 100
 let g:ctrlp_match_window = 'results:100'
 
 Plugin 'vim-ruby/vim-ruby'
@@ -74,15 +74,10 @@ Plugin 'dag/vim2hs'
 
 Plugin 'rking/ag.vim'
 
-Plugin 'pangloss/vim-javascript'
-
 Plugin 'kchmck/vim-coffee-script'
 
-Plugin 'terryma/vim-multiple-cursors'
-
-Plugin 'mattn/emmet-vim'
-
 Plugin 'AndrewRadev/switch.vim'
+nmap <leader>c :Switch<CR>
 
 Plugin 'jiangmiao/auto-pairs'
 
@@ -95,6 +90,8 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
+Plugin 'lambdatoast/elm.vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -105,7 +102,6 @@ set nowritebackup
 set noswapfile " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set history=50
 set ruler " show the cursor position all the time
-set showcmd " display incomplete commands
 set incsearch " do incremental searching
 set laststatus=2 " Always display the status line
 set autowrite " Automatically :write before running commands
@@ -135,9 +131,6 @@ endif
 highlight NonText guibg=#060606
 highlight Folded guibg=#0A0A0A guifg=#9090D0
 
-" Make it obvious where 80 characters is
-set textwidth=80
-"
 " " Numbers
 set number
 set numberwidth=5
@@ -206,6 +199,7 @@ colorscheme tomorrow
 
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 autocmd Filetype haskell setlocal ts=4 sts=4 sw=4
+autocmd Filetype elm setlocal ts=2 sts=2 sw=2
 
 if has('gui_running')
   set guifont=Inconsolata:h14
