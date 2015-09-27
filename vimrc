@@ -66,6 +66,8 @@ Plugin 'tpope/vim-endwise'
 
 Plugin 'tpope/vim-unimpaired'
 
+Plugin 'freitass/todo.txt-vim'
+
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_max_files = 10
 let g:ctrlp_match_window = 'results:10'
